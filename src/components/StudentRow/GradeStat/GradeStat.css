@@ -1,0 +1,22 @@
+.gradeStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.afterSc {
+  text-align: center;
+  border-radius: 5px;
+  width: 80%;
+  font-size: 1.3em;
+  padding: 10px;
+  color: white;
+}
+
+.passed {
+  background-color: rgb(76, 177, 76);
+}
+
+.reproved {
+  background-color: rgb(201, 79, 79);
+}
