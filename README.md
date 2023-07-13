@@ -1,6 +1,7 @@
 # Média Escolar UI.
     
 Projeto que calcula a média escolar dos alunos dinamicamente, dependendo da média o aluno deverá ou não realizar o "After-School" (recuperação).
+</br>
 Insert de dados apenas por codigo Pasta "src/data/Student.ts" caso queira adicionar um novo Estudante.
 
 # A média escolar nesse projeto é 7 
