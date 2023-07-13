@@ -7,18 +7,18 @@ Projeto que calcula a média escolar dos alunos dinamicamente (CodeInsertInterno
 # ScreenShot
 
 # Caso o aluno tenha sua nota abaixo da média:
-![](@/../src/images/reprovado.png)
+![](./../src/images/reprovado.png)
 
 # Caso o aluno tenha sua nota acima ou igual:
-![](@/../src/images/aprovado.png)
+![](./../src/images/aprovado.png)
 
 # Caso o aluno esteja desativado:
-![](@/../src/images/desativado.png)
+![](./../src/images/desativado.png)
 
 # Exemplo de uma listagem:
-![](@/../src/images/ScreenShot.png)
+![](./../src/images/ScreenShot.png)
 
-### Criado com
+## Criado com
 
 - Typescript
 - React/Vite
