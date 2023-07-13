@@ -17,7 +17,7 @@ Insert de dados apenas por codigo Pasta "src/data/Student.ts" caso queira adicio
 # Caso o aluno esteja desativado:
 ![](./../src/images/desativado.png)
 
-# Exemplo de uma listagem:
+# Exemplo de uma listagem completa:
 ![](./../src/images/ScreenShot.png)
 
 ## Criado com
