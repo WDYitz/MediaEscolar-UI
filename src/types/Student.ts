@@ -2,6 +2,7 @@ export type Student = {
     id: number;
     active?: boolean;
     name: string;
+    sex: string;
     email: string;
     avatar: string;
     grade1: number;

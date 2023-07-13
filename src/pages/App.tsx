@@ -13,11 +13,13 @@ export function App() {
           <th className="grade1Head">Grade 1</th>
           <th className="grade2Head">Grade 2</th>
           <th className="finalGradeHead">Final Grade</th>
+          <th className="gradeStat">After-School</th>
         </tr>
         {students.map((student) => (
           <StudentRow
             key={student.id}
             name={student.name}
+            sex={student.sex}
             email={student.email}
             avatar={student.avatar}
             grade1={student.grade1}

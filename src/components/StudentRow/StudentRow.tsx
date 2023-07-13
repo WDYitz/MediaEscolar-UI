@@ -1,9 +1,12 @@
 import "../StudentRow/StudentRow.css";
 import { useState } from "react";
-import { Status } from "./Status";
+import { Status } from "./Status/Status.tsx";
+import { GradeStat } from "./GradeStat/GradeStat";
+import { students } from "../../data/Student.tsx";
 
 type Props = {
   name: string;
+  sex: string;
   email: string;
   avatar: string;
   grade1: number;
@@ -13,6 +16,7 @@ type Props = {
 
 export function StudentRow({
   name,
+  sex,
   email,
   avatar,
   grade1,
@@ -20,10 +24,6 @@ export function StudentRow({
   finalGrade,
 }: Props) {
   const [status, setStatus] = useState<boolean>(false);
-
-  /* useEffect(() => {
-
-  }, [status]); */
 
   return (
     <tr className="studentRow">
@@ -33,7 +33,9 @@ export function StudentRow({
             src={
               avatar
                 ? avatar
-                : "https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg"
+                : sex === 'm'
+                  ? "https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg"
+                  : "https://cdn-icons-png.flaticon.com/512/4140/4140047.png"
             }
             alt="avatar"
             className="avatar"
@@ -48,13 +50,18 @@ export function StudentRow({
         <Status active={status} onClick={() => setStatus(!status)} />
       </td>
       <td>
-        <p className="grade">{grade1}</p>
+        <p className="grade">{status ? grade1 : <p>--</p>}</p>
       </td>
       <td>
-        <p className="grade">{grade2}</p>
+        <p className="grade">{status ? grade2 : <p>--</p>}</p>
       </td>
       <td>
         <p className="grade">{status ? finalGrade : <p>--</p>}</p>
+      </td>
+      <td>
+        {
+          status ? <GradeStat gradeStatus={finalGrade} /> : <p className="grade">--</p>
+        }
       </td>
     </tr>
   );
