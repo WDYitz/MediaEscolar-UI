@@ -1,0 +1,50 @@
+.studentRow {
+  background-color: #8257e56b;
+}
+
+.studentInfo {
+  display: flex;
+  align-items: center;
+  padding: 5px 0 5px 20px;
+}
+
+.avatar {
+  max-width: 70px;
+  border-radius: 100%;
+}
+
+.studentNameInfo {
+  margin-left: 20px;
+}
+
+.studentNameInfo .name {
+  font-size: 1.2em;
+  margin-bottom: 4px;
+  color: rgb(82, 77, 77);
+}
+
+.grade,
+.active {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.status {
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.statusBtn {
+  cursor: pointer;
+}
+
+.active {
+  background-color: #6b38e2;
+}
+
+.deactivate {
+  background-color: #cc2057;
+}
